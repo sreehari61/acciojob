@@ -28,10 +28,30 @@ body{
 .container{
     padding:20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap:1em;
 }
 
 .card{
     background-color: #ede7f6;
+    padding:10px;
+    border-radius:5px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
+    display: flex;
+}
+
+.card:hover{
+    background-color: #65499c;
+    cursor: pointer;
+}
+
+.card:hover a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color:#65499c;
+    width: 100%;
+    padding:10px;
 }

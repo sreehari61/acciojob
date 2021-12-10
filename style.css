@@ -38,6 +38,7 @@ body{
     border-radius:5px;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
     display: flex;
+    position: relative;
 }
 
 .card:hover{
@@ -49,9 +50,25 @@ body{
     color: white;
 }
 
+.card:hover .number{
+    color:rgba(225,225,225,0.5);
+}
+
 a{
     text-decoration: none;
     color:#65499c;
     width: 100%;
     padding:10px;
+}
+
+.number{
+    position:absolute;
+    top:0;
+    right:20px;
+    /* width: 100%; */
+    height:100%;
+    text-align: right;
+    font-size: 50px;
+    color: rgba(101,73,156,0.3);
+    background-color: red;
 }
